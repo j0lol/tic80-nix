@@ -28,7 +28,8 @@
 				];
 
 				buildInputs = [
-					zlib
+					gcc
+					
 				];
 
 				installPhase = ''
