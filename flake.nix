@@ -24,7 +24,7 @@
 
 				nativeBuildInputs = [
 					unzip
-					autoPatchelfHook
+					#autoPatchelfHook
 				];
 
 				buildInputs = [
