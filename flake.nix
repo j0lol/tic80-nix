@@ -25,13 +25,10 @@
 				nativeBuildInputs = [
 					unzip
 					autoPatchelfHook
-					clang
 				];
 
 				buildInputs = [
-					gcc
-					libgcc
-					libgccjit
+					stdenv.cc.cc
 				];
 
 				installPhase = ''
