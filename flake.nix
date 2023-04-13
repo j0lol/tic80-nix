@@ -30,7 +30,7 @@
 				buildInputs = [
 					gcc
 					libgcc
-					
+					libgccjit
 				];
 
 				installPhase = ''
