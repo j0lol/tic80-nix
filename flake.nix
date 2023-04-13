@@ -35,7 +35,7 @@
 					mkdir -p $out/{bin,share}/
 					mkdir $out/share/pixmaps
 					install -m755 tic80 $out/share
-					echo "cd $out/share/ && steam-run ./tic80" > $out/bin/tic80
+					echo "cd $out/share/ && ${pkgs.steam-run}/bin/steam-run ./tic80" > $out/bin/tic80
 					chmod 755 $out/bin/tic80
 
 			    cp ${./tic80.png} $out/share/pixmaps/tic80.png
