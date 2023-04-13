@@ -17,7 +17,7 @@
 				src = pkgs.fetchurl {
 				  # Remember `rec`!
 				  url = "https://github.com/nesbox/TIC-80/releases/download/v${version}/tic80-v1.0-linux.zip";
-				  sha256 = "sha256-rb9vZ3w4BfzygsdOCPLVX87T5tBXk6Aw+ba9I12fhwQ=";
+				  sha256 = "sha256-xeaqapjX3E/7hL8k/Wid/Rj9HIG2BWyt7GWPnlGTwPQ=";
 				};
 
 				sourceRoot = ".";
