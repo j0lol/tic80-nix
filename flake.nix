@@ -29,6 +29,7 @@
 
 				buildInputs = [
 					gcc
+					libgcc
 					
 				];
 
