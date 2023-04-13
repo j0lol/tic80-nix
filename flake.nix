@@ -1,7 +1,5 @@
 {
-	# thanks https://blog.sekun.net/posts/packaging-prebuilt-binaries-with-nix/
-
-  description = "Fantasy computer";
+  description = "Fantasy computer.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
@@ -10,7 +8,7 @@
   outputs = {self, nixpkgs}: {
     defaultPackage.x86_64-linux =
       with import nixpkgs { system = "x86_64-linux"; };
- stdenv.mkDerivation rec { name = "tic80-${version}";
+			 stdenv.mkDerivation rec { name = "tic80-${version}";
 
         version = "1.0.2164";
 
@@ -24,11 +22,6 @@
 
 				nativeBuildInputs = [
 					unzip
-					#autoPatchelfHook
-				];
-
-				buildInputs = [
-					stdenv.cc.cc
 				];
 
 				installPhase = ''
@@ -51,7 +44,6 @@
 			      categories = [ "Game" ];
 			    })
 			  ];
-
       };
   };
 }
