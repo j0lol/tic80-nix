@@ -1,0 +1,1596 @@
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+unpacking sources
+unpacking source archive /nix/store/wfphm9czx96nkfqiz1bv8jyks3jv86g7-source
+source root is source
+@nix { "action": "setPhase", "phase": "patchPhase" }
+patching sources
+@nix { "action": "setPhase", "phase": "configurePhase" }
+configuring
+fixing cmake files...
+cmake flags: -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/share/doc/TIC-80 -DCMAKE_INSTALL_INFODIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/include -DCMAKE_INSTALL_SBINDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/strip -DCMAKE_RANLIB=/nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/ranlib -DCMAKE_AR=/nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80 -DBUILD_PRO=On 
+-- Could NOT find Git (missing: GIT_EXECUTABLE) 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[0mBuilding for target : Linux[0m
+[0mPROJECT_VERSION: 1.0.0[0m
+[0mVERSION_HASH: [0m
+[0mBUILD_SDLGPU: OFF[0m
+[0mBUILD_TOUCH_INPUT: OFF[0m
+[0mBUILD_STUB: OFF[0m
+[0mBUILD_WITH_MRUBY: ON[0m
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Performing Test HAVE_GCC_WALL
+-- Performing Test HAVE_GCC_WALL - Success
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING - Success
+-- Performing Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT
+-- Performing Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT - Success
+-- Performing Test HAVE_GCC_WERROR_DECLARATION_AFTER_STATEMENT
+-- Performing Test HAVE_GCC_WERROR_DECLARATION_AFTER_STATEMENT - Success
+-- Performing Test HAVE_GCC_ATOMICS
+-- Performing Test HAVE_GCC_ATOMICS - Success
+-- Performing Test HAVE_GCC_PREFERRED_STACK_BOUNDARY
+-- Performing Test HAVE_GCC_PREFERRED_STACK_BOUNDARY - Failed
+-- Performing Test HAVE_GCC_FVISIBILITY
+-- Performing Test HAVE_GCC_FVISIBILITY - Success
+-- Performing Test HAVE_GCC_WSHADOW
+-- Performing Test HAVE_GCC_WSHADOW - Success
+-- Performing Test HAVE_NO_UNDEFINED
+-- Performing Test HAVE_NO_UNDEFINED - Success
+-- Performing Test HAVE_MMX
+-- Performing Test HAVE_MMX - Success
+-- Performing Test HAVE_3DNOW
+-- Performing Test HAVE_3DNOW - Success
+-- Performing Test HAVE_SSE
+-- Performing Test HAVE_SSE - Success
+-- Performing Test HAVE_SSE2
+-- Performing Test HAVE_SSE2 - Success
+-- Performing Test HAVE_SSE3
+-- Performing Test HAVE_SSE3 - Success
+-- Looking for immintrin.h
+-- Looking for immintrin.h - found
+-- Performing Test HAVE_ALTIVEC_H_HDR
+-- Performing Test HAVE_ALTIVEC_H_HDR - Failed
+-- Performing Test HAVE_ALTIVEC
+-- Performing Test HAVE_ALTIVEC - Failed
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for wchar.h
+-- Looking for wchar.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for ctype.h
+-- Looking for ctype.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for iconv.h
+-- Looking for iconv.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for libunwind.h
+-- Looking for libunwind.h - not found
+-- Looking for 7 include files stddef.h, ..., float.h
+-- Looking for 7 include files stddef.h, ..., float.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Looking for M_PI
+-- Looking for M_PI - found
+-- Performing Test HAVE_MPROTECT
+-- Performing Test HAVE_MPROTECT - Success
+-- Looking for strtod
+-- Looking for strtod - found
+-- Looking for malloc
+-- Looking for malloc - found
+-- Looking for calloc
+-- Looking for calloc - found
+-- Looking for realloc
+-- Looking for realloc - found
+-- Looking for free
+-- Looking for free - found
+-- Looking for getenv
+-- Looking for getenv - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for qsort
+-- Looking for qsort - found
+-- Looking for abs
+-- Looking for abs - found
+-- Looking for bcopy
+-- Looking for bcopy - found
+-- Looking for memset
+-- Looking for memset - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for memcmp
+-- Looking for memcmp - found
+-- Looking for strlen
+-- Looking for strlen - found
+-- Looking for strlcpy
+-- Looking for strlcpy - not found
+-- Looking for strlcat
+-- Looking for strlcat - not found
+-- Looking for _strrev
+-- Looking for _strrev - not found
+-- Looking for _strupr
+-- Looking for _strupr - not found
+-- Looking for _strlwr
+-- Looking for _strlwr - not found
+-- Looking for index
+-- Looking for index - found
+-- Looking for rindex
+-- Looking for rindex - found
+-- Looking for strchr
+-- Looking for strchr - found
+-- Looking for strrchr
+-- Looking for strrchr - found
+-- Looking for strstr
+-- Looking for strstr - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for itoa
+-- Looking for itoa - not found
+-- Looking for _ltoa
+-- Looking for _ltoa - not found
+-- Looking for _uitoa
+-- Looking for _uitoa - not found
+-- Looking for _ultoa
+-- Looking for _ultoa - not found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtoul
+-- Looking for strtoul - found
+-- Looking for _i64toa
+-- Looking for _i64toa - not found
+-- Looking for _ui64toa
+-- Looking for _ui64toa - not found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for atoi
+-- Looking for atoi - found
+-- Looking for atof
+-- Looking for atof - found
+-- Looking for strcmp
+-- Looking for strcmp - found
+-- Looking for strncmp
+-- Looking for strncmp - found
+-- Looking for _stricmp
+-- Looking for _stricmp - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for _strnicmp
+-- Looking for _strnicmp - not found
+-- Looking for strncasecmp
+-- Looking for strncasecmp - found
+-- Looking for wcscmp
+-- Looking for wcscmp - found
+-- Looking for _wcsdup
+-- Looking for _wcsdup - not found
+-- Looking for wcsdup
+-- Looking for wcsdup - found
+-- Looking for wcslcat
+-- Looking for wcslcat - not found
+-- Looking for wcslcpy
+-- Looking for wcslcpy - not found
+-- Looking for wcslen
+-- Looking for wcslen - found
+-- Looking for wcsncmp
+-- Looking for wcsncmp - found
+-- Looking for wcsstr
+-- Looking for wcsstr - found
+-- Looking for wcscasecmp
+-- Looking for wcscasecmp - found
+-- Looking for _wcsicmp
+-- Looking for _wcsicmp - not found
+-- Looking for wcsncasecmp
+-- Looking for wcsncasecmp - found
+-- Looking for _wcsnicmp
+-- Looking for _wcsnicmp - not found
+-- Looking for sscanf
+-- Looking for sscanf - found
+-- Looking for vsscanf
+-- Looking for vsscanf - found
+-- Looking for vsnprintf
+-- Looking for vsnprintf - found
+-- Looking for fopen64
+-- Looking for fopen64 - not found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for fseeko64
+-- Looking for fseeko64 - not found
+-- Looking for _Exit
+-- Looking for _Exit - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for setjmp
+-- Looking for setjmp - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for sysctlbyname
+-- Looking for sysctlbyname - not found
+-- Looking for getauxval
+-- Looking for getauxval - found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Looking for atan
+-- Looking for atan - found
+-- Looking for atan2
+-- Looking for atan2 - found
+-- Looking for atanf
+-- Looking for atanf - found
+-- Looking for atan2f
+-- Looking for atan2f - found
+-- Looking for ceil
+-- Looking for ceil - found
+-- Looking for ceilf
+-- Looking for ceilf - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for copysignf
+-- Looking for copysignf - found
+-- Looking for cos
+-- Looking for cos - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for exp
+-- Looking for exp - found
+-- Looking for expf
+-- Looking for expf - found
+-- Looking for fabs
+-- Looking for fabs - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for floor
+-- Looking for floor - found
+-- Looking for floorf
+-- Looking for floorf - found
+-- Looking for fmod
+-- Looking for fmod - found
+-- Looking for fmodf
+-- Looking for fmodf - found
+-- Looking for log
+-- Looking for log - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for log10
+-- Looking for log10 - found
+-- Looking for log10f
+-- Looking for log10f - found
+-- Looking for lround
+-- Looking for lround - found
+-- Looking for lroundf
+-- Looking for lroundf - found
+-- Looking for pow
+-- Looking for pow - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for round
+-- Looking for round - found
+-- Looking for roundf
+-- Looking for roundf - found
+-- Looking for scalbn
+-- Looking for scalbn - found
+-- Looking for scalbnf
+-- Looking for scalbnf - found
+-- Looking for sin
+-- Looking for sin - found
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for sqrt
+-- Looking for sqrt - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for tan
+-- Looking for tan - found
+-- Looking for tanf
+-- Looking for tanf - found
+-- Looking for acos
+-- Looking for acos - found
+-- Looking for acosf
+-- Looking for acosf - found
+-- Looking for asin
+-- Looking for asin - found
+-- Looking for asinf
+-- Looking for asinf - found
+-- Looking for trunc
+-- Looking for trunc - found
+-- Looking for truncf
+-- Looking for truncf - found
+-- Looking for iconv_open in iconv
+-- Looking for iconv_open in iconv - not found
+-- Looking for iconv_open in c
+-- Looking for iconv_open in c - found
+-- Looking for alloca.h
+-- Looking for alloca.h - found
+-- Looking for alloca
+-- Looking for alloca - found
+-- Looking for alloca
+-- Looking for alloca - found
+-- Looking for alloca
+-- Looking for alloca - not found
+-- Performing Test HAVE_SA_SIGACTION
+-- Performing Test HAVE_SA_SIGACTION - Success
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Performing Test HAVE_O_CLOEXEC
+-- Performing Test HAVE_O_CLOEXEC - Success
+-- Performing Test OSS_FOUND
+-- Performing Test OSS_FOUND - Success
+-- Looking for alsa/asoundlib.h
+-- Looking for alsa/asoundlib.h - not found
+-- Looking for audio/audiolib.h
+-- Looking for audio/audiolib.h - not found
+-- Looking for sndio.h
+-- Looking for sndio.h - not found
+-- Looking for samplerate.h
+-- Looking for samplerate.h - not found
+-- Performing Test HAVE_RPI
+-- Performing Test HAVE_RPI - Failed
+-- dynamic libX11 -> libX11.so.6
+-- dynamic libXext -> libXext.so.6
+-- Looking for X11/Xcursor/Xcursor.h
+-- Looking for X11/Xcursor/Xcursor.h - not found
+-- Looking for X11/extensions/Xinerama.h
+-- Looking for X11/extensions/Xinerama.h - not found
+-- Looking for X11/extensions/XInput2.h
+-- Looking for X11/extensions/XInput2.h - not found
+-- Looking for X11/extensions/Xrandr.h
+-- Looking for X11/extensions/Xrandr.h - not found
+-- Looking for X11/extensions/Xfixes.h
+-- Looking for X11/extensions/Xfixes.h - not found
+-- Looking for X11/extensions/Xrender.h
+-- Looking for X11/extensions/Xrender.h - not found
+-- Looking for X11/extensions/scrnsaver.h
+-- Looking for X11/extensions/scrnsaver.h - not found
+-- Looking for X11/extensions/shape.h
+-- Looking for X11/extensions/shape.h - found
+-- Looking for include files X11/Xlib.h, X11/extensions/Xdbe.h
+-- Looking for include files X11/Xlib.h, X11/extensions/Xdbe.h - found
+-- Looking for include files X11/Xlib.h, X11/extensions/xf86vmode.h
+-- Looking for include files X11/Xlib.h, X11/extensions/xf86vmode.h - not found
+-- Looking for 3 include files X11/Xlib.h, ..., X11/extensions/Xext.h
+-- Looking for 3 include files X11/Xlib.h, ..., X11/extensions/Xext.h - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Performing Test HAVE_XGENERICEVENT
+-- Performing Test HAVE_XGENERICEVENT - Success
+-- Looking for XkbKeycodeToKeysym
+-- Looking for XkbKeycodeToKeysym - found
+-- Performing Test HAVE_OPENGL_EGL
+-- Performing Test HAVE_OPENGL_EGL - Success
+-- Performing Test HAVE_OPENGL_GLX
+-- Performing Test HAVE_OPENGL_GLX - Success
+-- Performing Test HAVE_OPENGL
+-- Performing Test HAVE_OPENGL - Success
+-- Performing Test HAVE_OPENGLES_V1
+-- Performing Test HAVE_OPENGLES_V1 - Success
+-- Performing Test HAVE_OPENGLES_V2
+-- Performing Test HAVE_OPENGLES_V2 - Success
+-- Performing Test HAVE_VIVANTE_VDK
+-- Performing Test HAVE_VIVANTE_VDK - Failed
+-- Performing Test HAVE_VIVANTE_EGL_FB
+-- Performing Test HAVE_VIVANTE_EGL_FB - Failed
+-- Performing Test HAVE_INPUT_EVENTS
+-- Performing Test HAVE_INPUT_EVENTS - Success
+-- Performing Test HAVE_INPUT_KD
+-- Performing Test HAVE_INPUT_KD - Success
+-- Looking for libudev.h
+-- Looking for libudev.h - not found
+-- Looking for sys/inotify.h
+-- Looking for sys/inotify.h - found
+-- Looking for inotify_init
+-- Looking for inotify_init - found
+-- Looking for inotify_init1
+-- Looking for inotify_init1 - found
+-- Performing Test HAVE_PTHREADS
+-- Performing Test HAVE_PTHREADS - Success
+-- Performing Test HAVE_RECURSIVE_MUTEXES
+-- Performing Test HAVE_RECURSIVE_MUTEXES - Success
+-- Performing Test HAVE_PTHREADS_SEM
+-- Performing Test HAVE_PTHREADS_SEM - Success
+-- Performing Test HAVE_SEM_TIMEDWAIT
+-- Performing Test HAVE_SEM_TIMEDWAIT - Success
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for include file pthread_np.h
+-- Looking for include file pthread_np.h - not found
+-- Performing Test HAVE_PTHREAD_SETNAME_NP
+-- Performing Test HAVE_PTHREAD_SETNAME_NP - Success
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Looking for linux/version.h
+-- Looking for linux/version.h - found
+-- Could NOT find Git (missing: GIT_EXECUTABLE) 
+-- 
+-- SDL2 was configured with the following options:
+-- 
+-- Platform: Linux-6.2.10
+-- 64-bit:   TRUE
+-- Compiler: /nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/gcc
+-- Revision: 
+-- 
+-- Subsystems:
+--   Atomic:	ON
+--   Audio:	ON
+--   Video:	ON
+--   Render:	ON
+--   Events:	ON
+--   Joystick:	ON
+--   Haptic:	ON
+--   Hidapi:	ON
+--   Power:	ON
+--   Threads:	ON
+--   Timers:	ON
+--   File:	ON
+--   Loadso:	ON
+--   CPUinfo:	ON
+--   Filesystem:	ON
+--   Dlopen:	ON
+--   Sensor:	ON
+--   Locale:	ON
+-- 
+-- Options:
+--   SDL_3DNOW                   (Wanted: ON): ON
+--   SDL_ALSA                    (Wanted: ON): OFF
+--   SDL_ALSA_SHARED             (Wanted: ON): OFF
+--   SDL_ALTIVEC                 (Wanted: ON): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ARMSIMD                 (Wanted: OFF): OFF
+--   SDL_ARTS                    (Wanted: ON): OFF
+--   SDL_ARTS_SHARED             (Wanted: ON): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: ON): ON
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DIRECTFB                (Wanted: OFF): OFF
+--   SDL_DIRECTFB_SHARED         (Wanted: OFF): OFF
+--   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_ESD                     (Wanted: ON): OFF
+--   SDL_ESD_SHARED              (Wanted: ON): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND             (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND_SHARED      (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_JACK                    (Wanted: ON): OFF
+--   SDL_JACK_SHARED             (Wanted: ON): OFF
+--   SDL_KMSDRM                  (Wanted: ON): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: ON): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBSAMPLERATE           (Wanted: ON): OFF
+--   SDL_LIBSAMPLERATE_SHARED    (Wanted: ON): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): ON
+--   SDL_NAS                     (Wanted: ON): OFF
+--   SDL_NAS_SHARED              (Wanted: ON): OFF
+--   SDL_OFFSCREEN               (Wanted: OFF): OFF
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OSS                     (Wanted: ON): ON
+--   SDL_PIPEWIRE                (Wanted: ON): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: ON): OFF
+--   SDL_PTHREADS                (Wanted: ON): ON
+--   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PULSEAUDIO              (Wanted: ON): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: ON): OFF
+--   SDL_RENDER_D3D              (Wanted: OFF): OFF
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: ON): OFF
+--   SDL_RPI                     (Wanted: ON): OFF
+--   SDL_SNDIO                   (Wanted: ON): OFF
+--   SDL_SNDIO_SHARED            (Wanted: ON): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSEMATH                 (Wanted: ON): ON
+--   SDL_STATIC_PIC              (Wanted: OFF): OFF
+--   SDL_TEST                    (Wanted: OFF): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: ON): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WAYLAND                 (Wanted: ON): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: ON): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: ON): OFF
+--   SDL_WAYLAND_QT_TOUCH        (Wanted: ON): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: ON): OFF
+--   SDL_X11                     (Wanted: ON): ON
+--   SDL_X11_SHARED              (Wanted: ON): ON
+--   SDL_X11_XCURSOR             (Wanted: ON): OFF
+--   SDL_X11_XDBE                (Wanted: ON): ON
+--   SDL_X11_XFIXES              (Wanted: ON): OFF
+--   SDL_X11_XINERAMA            (Wanted: ON): OFF
+--   SDL_X11_XINPUT              (Wanted: ON): OFF
+--   SDL_X11_XRANDR              (Wanted: ON): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: ON): OFF
+--   SDL_X11_XSHAPE              (Wanted: ON): ON
+--   SDL_X11_XVM                 (Wanted: ON): OFF
+--   SDL_XINPUT                  (Wanted: OFF): OFF
+-- 
+--  CFLAGS:         -Dd_m3LogOutput=0 -idirafter "/build/source/vendor/sdl2/src/video/khronos" -DHAVE_LINUX_VERSION_H
+--  EXTRA_CFLAGS:  -D_REENTRANT -I/nix/store/f525j4v68yl89l93iz0wjq0gkxrhx70z-libX11-1.8.4-dev/include -msse3 -msse2 -msse -m3dnow -mmmx -Wshadow -fvisibility=hidden -Wdeclaration-after-statement -Werror=declaration-after-statement -fno-strict-aliasing -Wall 
+--  EXTRA_LDFLAGS: -Wl,--no-undefined;-pthread
+--  EXTRA_LIBS:    m;rt
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: OFF
+-- 
+-- If something was not detected, although the libraries
+-- were installed, then make sure you have set the
+-- CFLAGS and LDFLAGS environment variables correctly.
+-- 
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Performing Test UV_LINT_W4
+-- Performing Test UV_LINT_W4 - Failed
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER_MSVC
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER_MSVC - Failed
+-- Performing Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC
+-- Performing Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC - Failed
+-- Performing Test UV_LINT_NO_HIDES_LOCAL
+-- Performing Test UV_LINT_NO_HIDES_LOCAL - Failed
+-- Performing Test UV_LINT_NO_HIDES_PARAM
+-- Performing Test UV_LINT_NO_HIDES_PARAM - Failed
+-- Performing Test UV_LINT_NO_HIDES_GLOBAL
+-- Performing Test UV_LINT_NO_HIDES_GLOBAL - Failed
+-- Performing Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC
+-- Performing Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC - Failed
+-- Performing Test UV_LINT_NO_UNSAFE_MSVC
+-- Performing Test UV_LINT_NO_UNSAFE_MSVC - Failed
+-- Performing Test UV_LINT_WALL
+-- Performing Test UV_LINT_WALL - Success
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER - Success
+-- Performing Test UV_LINT_STRICT_PROTOTYPES
+-- Performing Test UV_LINT_STRICT_PROTOTYPES - Success
+-- Performing Test UV_LINT_EXTRA
+-- Performing Test UV_LINT_EXTRA - Success
+-- Performing Test UV_LINT_UTF8_MSVC
+-- Performing Test UV_LINT_UTF8_MSVC - Failed
+-- Performing Test UV_F_STRICT_ALIASING
+-- Performing Test UV_F_STRICT_ALIASING - Success
+-- summary of build options:
+    Install prefix:  /nix/store/p7hix81mzph7f1schrmq0mlx3pjw8jmj-tic-80
+    Target system:   Linux
+    Compiler:
+      C compiler:    /nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/gcc
+      CFLAGS:          -Dd_m3LogOutput=0
+
+-- Configuring done
+-- Generating done
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_POLICY_DEFAULT_CMP0025
+
+[0m
+-- Build files have been written to: /build/source/build
+cmake: enabled parallel building
+cmake: enabled parallel installing
+configurePhase completed in 43 seconds
+@nix { "action": "setPhase", "phase": "buildPhase" }
+building
+build flags: -j8 SHELL=/nix/store/zlf0f88vj30sc7567b80l52d19pbdmy2-bash-5.2-p15/bin/bash
+[  0%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/optional/wren_opt_meta.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/lpeg.dir/vendor/lpeg/lpcap.c.o[0m
+[  0%] [34m[1mCreating directories for 'mruby_vendor'[0m
+[  1%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_bind.c.o[0m
+[  1%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/dgif_lib.c.o[0m
+[  1%] [32mBuilding C object CMakeFiles/blipbuf.dir/vendor/blip-buf/blip_buf.c.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqapi.cpp.o[0m
+[  1%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lapi.c.o[0m
+[  2%] [34m[1mNo download step for 'mruby_vendor'[0m
+In file included from [01m[K/build/source/vendor/lpeg/lpcap.h:9[m[K,
+                 from [01m[K/build/source/vendor/lpeg/lpcap.c:9[m[K:
+[01m[K/build/source/vendor/lpeg/lptypes.h:13:[m[K [01;35m[Kwarning: [m[K"NDEBUG" redefined
+   13 | #define NDEBUG
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  2%] [34m[1mNo update step for 'mruby_vendor'[0m
+[  2%] [34m[1mNo patch step for 'mruby_vendor'[0m
+[  2%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/optional/wren_opt_random.c.o[0m
+[  3%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_code.c.o[0m
+[  3%] [34m[1mNo configure step for 'mruby_vendor'[0m
+[  3%] [32m[1mLinking C static library lib/libblipbuf.a[0m
+[  3%] [34m[1mPerforming build step for 'mruby_vendor'[0m
+[  3%] Built target blipbuf
+[  3%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqbaselib.cpp.o[0m
+[  3%] [32mBuilding C object CMakeFiles/lpeg.dir/vendor/lpeg/lpcode.c.o[0m
+[  3%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_compile.c.o[0m
+[  3%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_compiler.c.o[0m
+In file included from [01m[K/build/source/vendor/lpeg/lpcode.c:12[m[K:
+[01m[K/build/source/vendor/lpeg/lptypes.h:13:[m[K [01;35m[Kwarning: [m[K"NDEBUG" redefined
+   13 | #define NDEBUG
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/egif_lib.c.o[0m
+Cleaned up target build folder
+CPP   src/etc.c -> build/target/src/etc.pi
+CPP   src/codedump.c -> build/target/src/codedump.pi
+CPP   src/range.c -> build/target/src/range.pi
+CPP   src/array.c -> build/target/src/array.pi
+CPP   src/enum.c -> build/target/src/enum.pi
+CPP   src/error.c -> build/target/src/error.pi
+[  3%] [32mBuilding C object CMakeFiles/lpeg.dir/vendor/lpeg/lpprint.c.o[0m
+CPP   src/symbol.c -> build/target/src/symbol.pi
+In file included from [01m[K/build/source/vendor/lpeg/lpprint.c:11[m[K:
+[01m[K/build/source/vendor/lpeg/lptypes.h:13:[m[K [01;35m[Kwarning: [m[K"NDEBUG" redefined
+   13 | #define NDEBUG
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lcode.c.o[0m
+[  3%] [32mBuilding C object CMakeFiles/lpeg.dir/vendor/lpeg/lptree.c.o[0m
+CPP   src/fmt_fp.c -> build/target/src/fmt_fp.pi
+[  3%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/gif_err.c.o[0m
+In file included from [01m[K/build/source/vendor/lpeg/lptree.c:14[m[K:
+[01m[K/build/source/vendor/lpeg/lptypes.h:13:[m[K [01;35m[Kwarning: [m[K"NDEBUG" redefined
+   13 | #define NDEBUG
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+CPP   src/kernel.c -> build/target/src/kernel.pi
+CPP   src/debug.c -> build/target/src/debug.pi
+[  3%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/gif_font.c.o[0m
+CPP   src/version.c -> build/target/src/version.pi
+CPP   src/object.c -> build/target/src/object.pi
+CPP   src/state.c -> build/target/src/state.pi
+[  3%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/gif_hash.c.o[0m
+CPP   src/pool.c -> build/target/src/pool.pi
+CPP   src/print.c -> build/target/src/print.pi
+[  4%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/gifalloc.c.o[0m
+CPP   src/class.c -> build/target/src/class.pi
+[  5%] [32mBuilding C object CMakeFiles/lpeg.dir/vendor/lpeg/lpvm.c.o[0m
+CPP   src/dump.c -> build/target/src/dump.pi
+[  6%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqclass.cpp.o[0m
+In file included from [01m[K/build/source/vendor/lpeg/lpcap.h:9[m[K,
+                 from [01m[K/build/source/vendor/lpeg/lpvm.c:13[m[K:
+[01m[K/build/source/vendor/lpeg/lptypes.h:13:[m[K [01;35m[Kwarning: [m[K"NDEBUG" redefined
+   13 | #define NDEBUG
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+CPP   src/compar.c -> build/target/src/compar.pi
+[  6%] [32mBuilding C object CMakeFiles/giflib.dir/vendor/giflib/openbsd-reallocarray.c.o[0m
+CPP   src/init.c -> build/target/src/init.pi
+[  6%] [32m[1mLinking C static library lib/libgiflib.a[0m
+CPP   src/hash.c -> build/target/src/hash.pi
+[  6%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lctype.c.o[0m
+CPP   src/proc.c -> build/target/src/proc.pi
+[  6%] Built target giflib
+[  7%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ldebug.c.o[0m
+[  7%] [32m[1mLinking C static library lib/liblpeg.a[0m
+CPP   src/numeric.c -> build/target/src/numeric.pi
+[  7%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ldo.c.o[0m
+[  7%] Built target lpeg
+CPP   src/vm.c -> build/target/src/vm.pi
+[  7%] [32mBuilding C object CMakeFiles/duktape.dir/vendor/duktape/src/duktape.c.o[0m
+CPP   src/string.c -> build/target/src/string.pi
+[  7%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/adler32.c.o[0m
+CPP   src/variable.c -> build/target/src/variable.pi
+[  7%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/compress.c.o[0m
+CPP   src/load.c -> build/target/src/load.pi
+[  8%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/crc32.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ldump.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/deflate.c.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqcompiler.cpp.o[0m
+CPP   src/gc.c -> build/target/src/gc.pi
+[  8%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/inflate.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_core.c.o[0m
+CPP   src/backtrace.c -> build/target/src/backtrace.pi
+[  8%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lfunc.c.o[0m
+CPP   mrbgems/mruby-compiler/core/codegen.c -> build/target/mrbgems/mruby-compiler/core/codegen.pi
+CPP   mrbgems/mruby-compiler/core/y.tab.c -> build/target/mrbgems/mruby-compiler/core/y.tab.pi
+[  8%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lgc.c.o[0m
+CC    mrbgems/mruby-bin-mrbc/tools/mrbc/mrbc.c -> build/host/mrbgems/mruby-bin-mrbc/tools/mrbc/mrbc.o
+CC    src/etc.c -> build/host/src/etc.o
+CC    src/codedump.c -> build/host/src/codedump.o
+[  9%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/llex.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lmem.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/infback.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_core.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lobject.c.o[0m
+In file included from [01m[K/build/source/vendor/wasm3/source/m3_core.c:10[m[K:
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_none[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:120:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  120 | [01;36m[Kd_m3ErrorConst[m[K  (none,                          NULL)
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_mallocFailed[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:123:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  123 | [01;36m[Kd_m3ErrorConst[m[K  (mallocFailed,                  "memory allocation failed")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_incompatibleWasmVersion[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:126:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  126 | [01;36m[Kd_m3ErrorConst[m[K  (incompatibleWasmVersion,       "incompatible Wasm binary version")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmMalformed[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:127:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  127 | [01;36m[Kd_m3ErrorConst[m[K  (wasmMalformed,                 "malformed Wasm binary")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_misorderedWasmSection[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:128:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  128 | [01;36m[Kd_m3ErrorConst[m[K  (misorderedWasmSection,         "out of order Wasm section")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmUnderrun[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:129:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  129 | [01;36m[Kd_m3ErrorConst[m[K  (wasmUnderrun,                  "underrun while parsing Wasm binary")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmOverrun[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:130:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  130 | [01;36m[Kd_m3ErrorConst[m[K  (wasmOverrun,                   "overrun while parsing Wasm binary")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmMissingInitExpr[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:131:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  131 | [01;36m[Kd_m3ErrorConst[m[K  (wasmMissingInitExpr,           "missing init_expr in Wasm binary")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_lebOverflow[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:132:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  132 | [01;36m[Kd_m3ErrorConst[m[K  (lebOverflow,                   "LEB encoded value overflow")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_missingUTF8[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:133:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  133 | [01;36m[Kd_m3ErrorConst[m[K  (missingUTF8,                   "invalid length UTF-8 string")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmSectionUnderrun[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:134:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  134 | [01;36m[Kd_m3ErrorConst[m[K  (wasmSectionUnderrun,           "section underrun while parsing Wasm binary")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmSectionOverrun[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:135:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  135 | [01;36m[Kd_m3ErrorConst[m[K  (wasmSectionOverrun,            "section overrun while parsing Wasm binary")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_invalidTypeId[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:136:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  136 | [01;36m[Kd_m3ErrorConst[m[K  (invalidTypeId,                 "unknown value_type")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_tooManyMemorySections[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:137:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  137 | [01;36m[Kd_m3ErrorConst[m[K  (tooManyMemorySections,         "only one memory per module is supported")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_tooManyArgsRets[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:138:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  138 | [01;36m[Kd_m3ErrorConst[m[K  (tooManyArgsRets,               "too many arguments or return values")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_moduleNotLinked[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:141:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  141 | [01;36m[Kd_m3ErrorConst[m[K  (moduleNotLinked,               "attempting to use module that is not loaded")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_moduleAlreadyLinked[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:142:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  142 | [01;36m[Kd_m3ErrorConst[m[K  (moduleAlreadyLinked,           "attempting to bind module to multiple runtimes")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_functionLookupFailed[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:143:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  143 | [01;36m[Kd_m3ErrorConst[m[K  (functionLookupFailed,          "function lookup failed")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_functionImportMissing[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:144:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  144 | [01;36m[Kd_m3ErrorConst[m[K  (functionImportMissing,         "missing imported function")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_malformedFunctionSignature[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:146:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  146 | [01;36m[Kd_m3ErrorConst[m[K  (malformedFunctionSignature,    "malformed function signature")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_noCompiler[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:149:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  149 | [01;36m[Kd_m3ErrorConst[m[K  (noCompiler,                    "no compiler found for opcode")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_unknownOpcode[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:150:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  150 | [01;36m[Kd_m3ErrorConst[m[K  (unknownOpcode,                 "unknown opcode")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_restrictedOpcode[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:151:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  151 | [01;36m[Kd_m3ErrorConst[m[K  (restrictedOpcode,              "restricted opcode")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_functionStackOverflow[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:152:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  152 | [01;36m[Kd_m3ErrorConst[m[K  (functionStackOverflow,         "compiling function overran its stack height limit")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_functionStackUnderrun[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:153:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  153 | [01;36m[Kd_m3ErrorConst[m[K  (functionStackUnderrun,         "compiling function underran the stack")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_mallocFailedCodePage[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:154:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  154 | [01;36m[Kd_m3ErrorConst[m[K  (mallocFailedCodePage,          "memory allocation failed when acquiring a new M3 code page")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_settingImmutableGlobal[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:155:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  155 | [01;36m[Kd_m3ErrorConst[m[K  (settingImmutableGlobal,        "attempting to set an immutable global")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_typeMismatch[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:156:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  156 | [01;36m[Kd_m3ErrorConst[m[K  (typeMismatch,                  "incorrect type on stack")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_typeCountMismatch[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:157:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  157 | [01;36m[Kd_m3ErrorConst[m[K  (typeCountMismatch,             "incorrect value count on stack")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_missingCompiledCode[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:160:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  160 | [01;36m[Kd_m3ErrorConst[m[K  (missingCompiledCode,           "function is missing compiled m3 code")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_wasmMemoryOverflow[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:161:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  161 | [01;36m[Kd_m3ErrorConst[m[K  (wasmMemoryOverflow,            "runtime ran out of memory")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_globalMemoryNotAllocated[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:162:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  162 | [01;36m[Kd_m3ErrorConst[m[K  (globalMemoryNotAllocated,      "global memory is missing from a module")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_globaIndexOutOfBounds[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:163:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  163 | [01;36m[Kd_m3ErrorConst[m[K  (globaIndexOutOfBounds,         "global index is too large")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_argumentCountMismatch[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:164:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  164 | [01;36m[Kd_m3ErrorConst[m[K  (argumentCountMismatch,         "argument count mismatch")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_argumentTypeMismatch[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:165:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  165 | [01;36m[Kd_m3ErrorConst[m[K  (argumentTypeMismatch,          "argument type mismatch")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_globalLookupFailed[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:166:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  166 | [01;36m[Kd_m3ErrorConst[m[K  (globalLookupFailed,            "global lookup failed")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_globalTypeMismatch[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:167:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  167 | [01;36m[Kd_m3ErrorConst[m[K  (globalTypeMismatch,            "global type mismatch")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_globalNotMutable[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:168:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  168 | [01;36m[Kd_m3ErrorConst[m[K  (globalNotMutable,              "global is not mutable")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapOutOfBoundsMemoryAccess[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:171:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  171 | [01;36m[Kd_m3ErrorConst[m[K  (trapOutOfBoundsMemoryAccess,   "[trap] out of bounds memory access")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapDivisionByZero[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:172:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  172 | [01;36m[Kd_m3ErrorConst[m[K  (trapDivisionByZero,            "[trap] integer divide by zero")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapIntegerOverflow[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:173:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  173 | [01;36m[Kd_m3ErrorConst[m[K  (trapIntegerOverflow,           "[trap] integer overflow")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapIntegerConversion[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:174:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  174 | [01;36m[Kd_m3ErrorConst[m[K  (trapIntegerConversion,         "[trap] invalid conversion to integer")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapIndirectCallTypeMismatch[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:175:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  175 | [01;36m[Kd_m3ErrorConst[m[K  (trapIndirectCallTypeMismatch,  "[trap] indirect call type mismatch")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapTableIndexOutOfRange[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:176:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  176 | [01;36m[Kd_m3ErrorConst[m[K  (trapTableIndexOutOfRange,      "[trap] undefined element")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapTableElementIsNull[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:177:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  177 | [01;36m[Kd_m3ErrorConst[m[K  (trapTableElementIsNull,        "[trap] null table element")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapExit[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:178:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  178 | [01;36m[Kd_m3ErrorConst[m[K  (trapExit,                      "[trap] program called exit")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapAbort[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:179:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  179 | [01;36m[Kd_m3ErrorConst[m[K  (trapAbort,                     "[trap] program called abort")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapUnreachable[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:180:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  180 | [01;36m[Kd_m3ErrorConst[m[K  (trapUnreachable,               "[trap] unreachable executed")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:113:71:[m[K [01;35m[Kwarning: [m[K'[01m[Km3Err_trapStackOverflow[m[K' initialized and declared '[01m[Kextern[m[K'
+  113 | #   define d_m3ErrorConst(LABEL, STRING)        extern const M3Result [01;35m[Km3Err_[m[K##LABEL = { STRING };
+      |                                                                       [01;35m[K^~~~~~[m[K
+[01m[K/build/source/vendor/wasm3/source/wasm3.h:181:1:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kd_m3ErrorConst[m[K'
+  181 | [01;36m[Kd_m3ErrorConst[m[K  (trapStackOverflow,             "[trap] stack overflow")
+      | [01;36m[K^~~~~~~~~~~~~~[m[K
+[  9%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_parse.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/inftrees.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lopcodes.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lparser.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lstate.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_debug.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_env.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/inffast.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lstring.c.o[0m
+CC    src/range.c -> build/host/src/range.o
+[ 12%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_primitive.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ltable.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_utils.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_exec.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_function.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/trees.c.o[0m
+CC    src/array.c -> build/host/src/array.o
+[ 13%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ltm.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_info.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_value.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/wasm.dir/vendor/wasm3/source/m3_module.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lvm.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lundump.c.o[0m
+[ 15%] [32m[1mLinking C static library lib/libwasm.a[0m
+[ 15%] Built target wasm
+[ 15%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqdebug.cpp.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lzio.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/uncompr.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lauxlib.c.o[0m
+[ 15%] [32m[1mLinking C static library ../../lib/libSDL2main.a[0m
+[ 15%] [32mBuilding C object CMakeFiles/zlib.dir/vendor/zlib/zutil.c.o[0m
+[ 15%] Built target SDL2main
+[ 15%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/SDL.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/wren.dir/vendor/wren/src/vm/wren_vm.c.o[0m
+[ 16%] [32m[1mLinking C static library lib/libzlib.a[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqfuncstate.cpp.o[0m
+[ 16%] Built target zlib
+[ 16%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/png.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lbaselib.c.o[0m
+CC    src/enum.c -> build/host/src/enum.o
+CC    src/error.c -> build/host/src/error.o
+[ 17%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lcorolib.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ldblib.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/liolib.c.o[0m
+[ 18%] [32m[1mLinking C static library lib/libwren.a[0m
+[ 18%] Built target wren
+[ 18%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngerror.c.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqlexer.cpp.o[0m
+CC    src/symbol.c -> build/host/src/symbol.o
+[ 18%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lmathlib.c.o[0m
+[ 18%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/SDL_assert.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngget.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/loslib.c.o[0m
+[ 19%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/SDL_dataqueue.c.o[0m
+CC    src/fmt_fp.c -> build/host/src/fmt_fp.o
+CC    src/kernel.c -> build/host/src/kernel.o
+[ 20%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/SDL_error.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lstrlib.c.o[0m
+[ 21%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/SDL_hints.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngmem.c.o[0m
+CC    src/debug.c -> build/host/src/debug.o
+[ 21%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/SDL_log.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngpread.c.o[0m
+CC    src/version.c -> build/host/src/version.o
+CC    src/object.c -> build/host/src/object.o
+[ 21%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/atomic/SDL_atomic.c.o[0m
+[ 21%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/atomic/SDL_spinlock.c.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqmem.cpp.o[0m
+[ 23%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqobject.cpp.o[0m
+[ 23%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiocvt.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/ltablib.c.o[0m
+[ 23%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiodev.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngread.c.o[0m
+CC    src/state.c -> build/host/src/state.o
+[ 23%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/lutf8lib.c.o[0m
+CC    src/pool.c -> build/host/src/pool.o
+[ 23%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/loadlib.c.o[0m
+CC    src/print.c -> build/host/src/print.o
+CC    src/class.c -> build/host/src/class.o
+[ 24%] [32mBuilding C object CMakeFiles/lua.dir/vendor/lua/linit.c.o[0m
+[ 24%] [32m[1mLinking C static library lib/liblua.a[0m
+[ 24%] Built target lua
+[ 24%] [32mBuilding C object CMakeFiles/wave_writer.dir/vendor/blip-buf/wave_writer.c.o[0m
+[ 25%] [32m[1mLinking C static library lib/libwave_writer.a[0m
+[ 25%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audiotypecvt.c.o[0m
+[ 25%] Built target wave_writer
+[ 25%] [32mBuilding C object CMakeFiles/argparse.dir/vendor/argparse/argparse.c.o[0m
+[ 25%] [32m[1mLinking C static library lib/libargparse.a[0m
+[ 25%] Built target argparse
+[ 25%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngrio.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/http_parser.dir/vendor/http-parser/http_parser.c.o[0m
+[ 25%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/SDL_mixer.c.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqstate.cpp.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngrtran.c.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqtable.cpp.o[0m
+[ 27%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/SDL_wave.c.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/squirrel/sqvm.cpp.o[0m
+CC    src/dump.c -> build/host/src/dump.o
+[ 27%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/cpuinfo/SDL_cpuinfo.c.o[0m
+[ 28%] [32m[1mLinking C static library lib/libhttp_parser.a[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdaux.cpp.o[0m
+[ 29%] Built target http_parser
+[ 29%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/fs-poll.c.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdblob.cpp.o[0m
+[ 29%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/dynapi/SDL_dynapi.c.o[0m
+[ 29%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/idna.c.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdio.cpp.o[0m
+CC    src/compar.c -> build/host/src/compar.o
+CC    src/init.c -> build/host/src/init.o
+CC    src/hash.c -> build/host/src/hash.o
+[ 29%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdmath.cpp.o[0m
+[ 29%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/inet.c.o[0m
+[ 29%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_clipboardevents.c.o[0m
+[ 30%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_displayevents.c.o[0m
+[ 30%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/random.c.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdrex.cpp.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngrutil.c.o[0m
+[ 30%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_dropevents.c.o[0m
+[ 31%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/strscpy.c.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdstream.cpp.o[0m
+[ 32%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/threadpool.c.o[0m
+[ 32%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/timer.c.o[0m
+[ 32%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_events.c.o[0m
+CC    src/proc.c -> build/host/src/proc.o
+[ 32%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/uv-common.c.o[0m
+[ 32%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_gesture.c.o[0m
+CC    src/numeric.c -> build/host/src/numeric.o
+In file included from [01m[K/build/source/vendor/libuv/src/uv-common.h:42[m[K,
+                 from [01m[K/build/source/vendor/libuv/src/uv-common.c:23[m[K:
+[01m[K/build/source/vendor/libuv/src/uv-common.c:[m[K In function '[01m[Kuv_walk[m[K':
+[01m[K/build/source/vendor/libuv/src/queue.h:68:19:[m[K [01;35m[Kwarning: [m[Kstoring the address of local variable '[01m[Kqueue[m[K' in '[01m[K((void * (**)[2])MEM[(void *[2] * *)loop_13(D) + 16B])[1][m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdangling-pointer=-Wdangling-pointer=]8;;[m[K]
+   68 |     QUEUE_PREV(q) [01;35m[K=[m[K (n);                                                      \
+      |                   [01;35m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:78:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_SPLIT[m[K'
+   78 |       [01;36m[KQUEUE_SPLIT[m[K(h, q, n);                                                   \
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/uv-common.c:491:3:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_MOVE[m[K'
+  491 |   [01;36m[KQUEUE_MOVE[m[K(&loop->handle_queue, &queue);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/uv-common.c:487:9:[m[K [01;36m[Knote: [m[K'[01m[Kqueue[m[K' declared here
+  487 |   QUEUE [01;36m[Kqueue[m[K;
+      |         [01;36m[K^~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:40:27:[m[K [01;36m[Knote: [m[K'[01m[K((void * (**)[2])loop)[2][m[K' declared here
+   40 |   ((const QUEUE *) (q) == [01;36m[K([m[Kconst QUEUE *) QUEUE_NEXT(q))
+      |                           [01;36m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:74:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_EMPTY[m[K'
+   74 |     if ([01;36m[KQUEUE_EMPTY[m[K(h))                                                       \
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/uv-common.c:491:3:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_MOVE[m[K'
+  491 |   [01;36m[KQUEUE_MOVE[m[K(&loop->handle_queue, &queue);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[ 32%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.o[0m
+[ 33%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/version.c.o[0m
+[ 33%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/async.c.o[0m
+[ 33%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/core.c.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdstring.cpp.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngset.c.o[0m
+[ 33%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/dl.c.o[0m
+CC    src/vm.c -> build/host/src/vm.o
+[ 34%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/fs.c.o[0m
+[ 34%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_keyboard.c.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/squirrel.dir/vendor/squirrel/sqstdlib/sqstdsystem.cpp.o[0m
+[ 34%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.o[0m
+[ 34%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngtrans.c.o[0m
+[ 34%] [32m[1mLinking CXX static library lib/libsquirrel.a[0m
+[ 34%] Built target squirrel
+[ 34%] [32mBuilding C object vendor/zip/CMakeFiles/OBJLIB.dir/src/zip.c.o[0m
+[ 35%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_mouse.c.o[0m
+[ 35%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.o[0m
+[ 35%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.o[0m
+[ 35%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngwio.c.o[0m
+[ 35%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/loop.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngwrite.c.o[0m
+[ 37%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/pipe.c.o[0m
+[ 37%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/poll.c.o[0m
+[ 37%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_quit.c.o[0m
+[ 37%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/process.c.o[0m
+[ 37%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngwtran.c.o[0m
+[ 37%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_touch.c.o[0m
+[ 37%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.o[0m
+[ 37%] [32mBuilding C object CMakeFiles/png.dir/vendor/libpng/pngwutil.c.o[0m
+[ 37%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/SDL_windowevents.c.o[0m
+[ 37%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/signal.c.o[0m
+[ 38%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/stream.c.o[0m
+In file included from [01m[K/build/source/vendor/libuv/src/uv-common.h:42[m[K,
+                 from [01m[K/build/source/vendor/libuv/src/unix/internal.h:25[m[K,
+                 from [01m[K/build/source/vendor/libuv/src/unix/stream.c:23[m[K:
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:[m[K In function '[01m[Kuv__write_callbacks[m[K':
+[01m[K/build/source/vendor/libuv/src/queue.h:68:19:[m[K [01;35m[Kwarning: [m[Kstoring the address of local variable '[01m[Kpq[m[K' in '[01m[K((void * (**)[2])MEM[(void *[2] * *)stream_24(D) + 208B])[1][m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdangling-pointer=-Wdangling-pointer=]8;;[m[K]
+   68 |     QUEUE_PREV(q) [01;35m[K=[m[K (n);                                                      \
+      |                   [01;35m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:78:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_SPLIT[m[K'
+   78 |       [01;36m[KQUEUE_SPLIT[m[K(h, q, n);                                                   \
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:935:3:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_MOVE[m[K'
+  935 |   [01;36m[KQUEUE_MOVE[m[K(&stream->write_completed_queue, &pq);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:930:9:[m[K [01;36m[Knote: [m[K'[01m[Kpq[m[K' declared here
+  930 |   QUEUE [01;36m[Kpq[m[K;
+      |         [01;36m[K^~[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:40:27:[m[K [01;36m[Knote: [m[K'[01m[K((void * (**)[2])stream)[26][m[K' declared here
+   40 |   ((const QUEUE *) (q) == [01;36m[K([m[Kconst QUEUE *) QUEUE_NEXT(q))
+      |                           [01;36m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:932:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_EMPTY[m[K'
+  932 |   if ([01;36m[KQUEUE_EMPTY[m[K(&stream->write_completed_queue))
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[ 38%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/events/imKStoUCS.c.o[0m
+[ 38%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/tcp.c.o[0m
+[ 38%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/thread.c.o[0m
+[ 39%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/file/SDL_rwops.c.o[0m
+[ 39%] [32m[1mLinking C static library lib/libpng.a[0m
+[ 39%] Built target png
+[ 39%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/haptic/SDL_haptic.c.o[0m
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:[m[K In function '[01m[Kthread_stack_size[m[K':
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:195:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Krlim_t[m[K' {aka '[01m[Klong unsigned int[m[K'} and '[01m[Klong int[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  195 |       if (lim.rlim_cur [01;35m[K>=[m[K PTHREAD_STACK_MIN)
+      |                        [01;35m[K^~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:[m[K In function '[01m[Kuv_thread_create_ex[m[K':
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:243:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Ksize_t[m[K' {aka '[01m[Klong unsigned int[m[K'} and '[01m[Klong int[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  243 |     if (stack_size [01;35m[K<[m[K PTHREAD_STACK_MIN)
+      |                    [01;35m[K^[m[K
+[ 39%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/tty.c.o[0m
+[ 40%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/udp.c.o[0m
+[ 40%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o[0m
+[ 40%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/proctitle.c.o[0m
+[01m[K/build/source/vendor/sdl2/src/hidapi/SDL_hidapi.c:969:1:[m[K [01;35m[Kwarning: [m[K'[01m[KCopyHIDDeviceInfo[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+  969 | [01;35m[KCopyHIDDeviceInfo[m[K(struct SDL_hid_device_info *pSrc, struct SDL_hid_device_info *pDst)
+      | [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[ 40%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_atan2.c.o[0m
+CC    src/string.c -> build/host/src/string.o
+[ 40%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_exp.c.o[0m
+[ 40%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/linux-core.c.o[0m
+[ 40%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/linux-inotify.c.o[0m
+[01m[K/build/source/vendor/mruby/src/string.c:[m[K In function '[01m[Kmrb_str_capitalize_bang[m[K':
+[01m[K/build/source/vendor/mruby/src/string.c:1448:27:[m[K [01;35m[Kwarning: [m[Kthe comparison will always evaluate as '[01m[Ktrue[m[K' for the address of '[01m[Kary[m[K' will never be NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+ 1448 |   if (RSTR_LEN(s) == 0 || [01;35m[K![m[KRSTR_PTR(s)) return mrb_nil_value();
+      |                           [01;35m[K^[m[K
+In file included from [01m[K/build/source/vendor/mruby/src/string.c:23[m[K:
+[01m[K/build/source/vendor/mruby/include/mruby/string.h:38:8:[m[K [01;36m[Knote: [m[K'[01m[Kary[m[K' declared here
+   38 |   char [01;36m[Kary[m[K[RSTRING_EMBED_LEN_MAX+1];
+      |        [01;36m[K^~~[m[K
+[ 40%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/linux-syscalls.c.o[0m
+[ 41%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.o[0m
+[ 42%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_fmod.c.o[0m
+[ 42%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.o[0m
+[ 42%] [32mBuilding C object vendor/libuv/CMakeFiles/uv_a.dir/src/unix/random-sysctl-linux.c.o[0m
+[ 42%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_log.c.o[0m
+[ 42%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_log10.c.o[0m
+[ 42%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_pow.c.o[0m
+[ 43%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_rem_pio2.c.o[0m
+[ 43%] [32m[1mLinking C static library ../../lib/libuv_a.a[0m
+[ 43%] Built target OBJLIB
+[ 43%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/fs-poll.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/bin2txt.dir/tools/bin2txt.c.o[0m
+[ 44%] Built target uv_a
+[ 44%] [32m[1mLinking C static library ../../lib/libzip.a[0m
+[01m[K/build/source/build/tools/bin2txt.c:[m[K In function '[01m[Kmain[m[K':
+[01m[K/build/source/build/tools/bin2txt.c:51:33:[m[K [01;35m[Kwarning: [m[Kignoring return value of '[01m[Kfread[m[K' declared with attribute '[01m[Kwarn_unused_result[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+   51 |                                 [01;35m[Kfread(buffer, size, 1, bin)[m[K;
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+/nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/ar qc ../../lib/libzip.a CMakeFiles/OBJLIB.dir/src/zip.c.o
+/nix/store/nlgyw2fv0cm8rkz8qm1jyw78vyif1bl9-gcc-wrapper-12.2.0/bin/ranlib ../../lib/libzip.a
+[ 44%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/e_sqrt.c.o[0m
+[ 44%] Built target zip
+[ 44%] [32m[1mLinking C executable bin/bin2txt[0m
+[ 44%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/k_cos.c.o[0m
+[ 44%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/k_rem_pio2.c.o[0m
+[ 44%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/k_sin.c.o[0m
+[ 44%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/idna.c.o[0m
+[ 44%] Built target bin2txt
+[ 45%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/inet.c.o[0m
+[ 46%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/k_tan.c.o[0m
+[ 46%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_atan.c.o[0m
+[ 46%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_copysign.c.o[0m
+[ 46%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_cos.c.o[0m
+[ 46%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_fabs.c.o[0m
+[ 46%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/random.c.o[0m
+[ 47%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_floor.c.o[0m
+[ 47%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_scalbn.c.o[0m
+[ 47%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/strscpy.c.o[0m
+[ 47%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_sin.c.o[0m
+[ 47%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/libm/s_tan.c.o[0m
+[ 47%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/threadpool.c.o[0m
+[ 47%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/locale/SDL_locale.c.o[0m
+[ 48%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/misc/SDL_url.c.o[0m
+[ 48%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/timer.c.o[0m
+[ 48%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/power/SDL_power.c.o[0m
+[ 48%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/SDL_d3dmath.c.o[0m
+[ 48%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/SDL_render.c.o[0m
+[ 49%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/SDL_yuv_sw.c.o[0m
+[ 49%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_render_d3d.c.o[0m
+[ 50%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/uv-common.c.o[0m
+CC    src/variable.c -> build/host/src/variable.o
+[ 50%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/uv-data-getter-setters.c.o[0m
+[ 50%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o[0m
+[ 50%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/version.c.o[0m
+[ 50%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/async.c.o[0m
+[ 51%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/core.c.o[0m
+[ 51%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/dl.c.o[0m
+In file included from [01m[K/build/source/vendor/libuv/src/uv-common.h:42[m[K,
+                 from [01m[K/build/source/vendor/libuv/src/uv-common.c:23[m[K:
+[01m[K/build/source/vendor/libuv/src/uv-common.c:[m[K In function '[01m[Kuv_walk[m[K':
+[01m[K/build/source/vendor/libuv/src/queue.h:68:19:[m[K [01;35m[Kwarning: [m[Kstoring the address of local variable '[01m[Kqueue[m[K' in '[01m[K((void * (**)[2])MEM[(void *[2] * *)loop_13(D) + 16B])[1][m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdangling-pointer=-Wdangling-pointer=]8;;[m[K]
+   68 |     QUEUE_PREV(q) [01;35m[K=[m[K (n);                                                      \
+      |                   [01;35m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:78:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_SPLIT[m[K'
+   78 |       [01;36m[KQUEUE_SPLIT[m[K(h, q, n);                                                   \
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/uv-common.c:491:3:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_MOVE[m[K'
+  491 |   [01;36m[KQUEUE_MOVE[m[K(&loop->handle_queue, &queue);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/uv-common.c:487:9:[m[K [01;36m[Knote: [m[K'[01m[Kqueue[m[K' declared here
+  487 |   QUEUE [01;36m[Kqueue[m[K;
+      |         [01;36m[K^~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:40:27:[m[K [01;36m[Knote: [m[K'[01m[K((void * (**)[2])loop)[2][m[K' declared here
+   40 |   ((const QUEUE *) (q) == [01;36m[K([m[Kconst QUEUE *) QUEUE_NEXT(q))
+      |                           [01;36m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:74:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_EMPTY[m[K'
+   74 |     if ([01;36m[KQUEUE_EMPTY[m[K(h))                                                       \
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/uv-common.c:491:3:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_MOVE[m[K'
+  491 |   [01;36m[KQUEUE_MOVE[m[K(&loop->handle_queue, &queue);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[ 51%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/fs.c.o[0m
+[ 51%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/getaddrinfo.c.o[0m
+[ 51%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/getnameinfo.c.o[0m
+[ 52%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/loop-watcher.c.o[0m
+CC    src/load.c -> build/host/src/load.o
+[ 52%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/loop.c.o[0m
+[ 52%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/pipe.c.o[0m
+[ 52%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o[0m
+[ 52%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/poll.c.o[0m
+[ 52%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/process.c.o[0m
+[ 52%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o[0m
+[01m[K/build/source/vendor/sdl2/src/render/SDL_render.c:[m[K In function '[01m[KRenderDrawPointsWithRects[m[K':
+[01m[K/build/source/vendor/sdl2/src/render/SDL_render.c:2677:18:[m[K [01;35m[Kwarning: [m[K'[01m[K<unknown>[m[K' may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+ 2677 |         retval = [01;35m[KQueueCmdFillRects(renderer, frects, count)[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/render/SDL_render.c:524:1:[m[K [01;36m[Knote: [m[Kby argument 2 of type '[01m[Kconst SDL_FRect *[m[K' to '[01m[KQueueCmdFillRects[m[K' declared here
+  524 | [01;36m[KQueueCmdFillRects[m[K(SDL_Renderer *renderer, const SDL_FRect * rects, const int count)
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[ 53%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/random-devurandom.c.o[0m
+[01m[K/build/source/vendor/sdl2/src/render/SDL_render.c:[m[K In function '[01m[KRenderDrawPointsWithRectsF[m[K':
+[01m[K/build/source/vendor/sdl2/src/render/SDL_render.c:2750:18:[m[K [01;35m[Kwarning: [m[K'[01m[K<unknown>[m[K' may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+ 2750 |         retval = [01;35m[KQueueCmdFillRects(renderer, frects, count)[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/render/SDL_render.c:524:1:[m[K [01;36m[Knote: [m[Kby argument 2 of type '[01m[Kconst SDL_FRect *[m[K' to '[01m[KQueueCmdFillRects[m[K' declared here
+  524 | [01;36m[KQueueCmdFillRects[m[K(SDL_Renderer *renderer, const SDL_FRect * rects, const int count)
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+CC    src/gc.c -> build/host/src/gc.o
+[ 54%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_render_gl.c.o[0m
+[ 54%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/signal.c.o[0m
+[ 54%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/stream.c.o[0m
+[ 54%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/tcp.c.o[0m
+[ 54%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/thread.c.o[0m
+In file included from [01m[K/build/source/vendor/libuv/src/uv-common.h:42[m[K,
+                 from [01m[K/build/source/vendor/libuv/src/unix/internal.h:25[m[K,
+                 from [01m[K/build/source/vendor/libuv/src/unix/stream.c:23[m[K:
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:[m[K In function '[01m[Kuv__write_callbacks[m[K':
+[01m[K/build/source/vendor/libuv/src/queue.h:68:19:[m[K [01;35m[Kwarning: [m[Kstoring the address of local variable '[01m[Kpq[m[K' in '[01m[K((void * (**)[2])MEM[(void *[2] * *)stream_24(D) + 208B])[1][m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdangling-pointer=-Wdangling-pointer=]8;;[m[K]
+   68 |     QUEUE_PREV(q) [01;35m[K=[m[K (n);                                                      \
+      |                   [01;35m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:78:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_SPLIT[m[K'
+   78 |       [01;36m[KQUEUE_SPLIT[m[K(h, q, n);                                                   \
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:935:3:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_MOVE[m[K'
+  935 |   [01;36m[KQUEUE_MOVE[m[K(&stream->write_completed_queue, &pq);
+      |   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:930:9:[m[K [01;36m[Knote: [m[K'[01m[Kpq[m[K' declared here
+  930 |   QUEUE [01;36m[Kpq[m[K;
+      |         [01;36m[K^~[m[K
+[01m[K/build/source/vendor/libuv/src/queue.h:40:27:[m[K [01;36m[Knote: [m[K'[01m[K((void * (**)[2])stream)[26][m[K' declared here
+   40 |   ((const QUEUE *) (q) == [01;36m[K([m[Kconst QUEUE *) QUEUE_NEXT(q))
+      |                           [01;36m[K^[m[K
+[01m[K/build/source/vendor/libuv/src/unix/stream.c:932:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KQUEUE_EMPTY[m[K'
+  932 |   if ([01;36m[KQUEUE_EMPTY[m[K(&stream->write_completed_queue))
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:[m[K In function '[01m[Kthread_stack_size[m[K':
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:195:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Krlim_t[m[K' {aka '[01m[Klong unsigned int[m[K'} and '[01m[Klong int[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  195 |       if (lim.rlim_cur [01;35m[K>=[m[K PTHREAD_STACK_MIN)
+      |                        [01;35m[K^~[m[K
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:[m[K In function '[01m[Kuv_thread_create_ex[m[K':
+[01m[K/build/source/vendor/libuv/src/unix/thread.c:243:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Ksize_t[m[K' {aka '[01m[Klong unsigned int[m[K'} and '[01m[Klong int[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  243 |     if (stack_size [01;35m[K<[m[K PTHREAD_STACK_MIN)
+      |                    [01;35m[K^[m[K
+[ 55%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/tty.c.o[0m
+[ 55%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/udp.c.o[0m
+[ 55%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/proctitle.c.o[0m
+[ 55%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/linux-core.c.o[0m
+CC    src/backtrace.c -> build/host/src/backtrace.o
+[ 56%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/linux-inotify.c.o[0m
+[ 56%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/linux-syscalls.c.o[0m
+CC    mrbgems/mruby-compiler/core/codegen.c -> build/host/mrbgems/mruby-compiler/core/codegen.o
+[ 56%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/procfs-exepath.c.o[0m
+[ 56%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_shaders_gl.c.o[0m
+[ 56%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/random-getrandom.c.o[0m
+[ 56%] [32mBuilding C object vendor/libuv/CMakeFiles/uv.dir/src/unix/random-sysctl-linux.c.o[0m
+[ 56%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/opengles/SDL_render_gles.c.o[0m
+[ 56%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles2.c.o[0m
+[ 56%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o[0m
+[ 57%] [32m[1mLinking C shared library ../../lib/libuv.so[0m
+[ 58%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/psp/SDL_render_psp.c.o[0m
+[ 58%] Built target uv
+[ 58%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendfillrect.c.o[0m
+[ 58%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendpoint.c.o[0m
+[ 58%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendline.c.o[0m
+[ 59%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawline.c.o[0m
+[ 59%] [32m[1mLinking C static library lib/libduktape.a[0m
+[ 59%] Built target duktape
+[ 59%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawpoint.c.o[0m
+[ 59%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_render_sw.c.o[0m
+[ 59%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_rotate.c.o[0m
+[ 59%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/software/SDL_triangle.c.o[0m
+[ 60%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o[0m
+[ 60%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o[0m
+[ 60%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o[0m
+[ 60%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/sensor/SDL_sensor.c.o[0m
+[ 60%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc32.c.o[0m
+[ 61%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_getenv.c.o[0m
+[ 61%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_iconv.c.o[0m
+[ 61%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_malloc.c.o[0m
+[ 61%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_qsort.c.o[0m
+[ 61%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_stdlib.c.o[0m
+[ 62%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_string.c.o[0m
+CC    mrbgems/mruby-compiler/core/y.tab.c -> build/host/mrbgems/mruby-compiler/core/y.tab.o
+[ 62%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/stdlib/SDL_strtokr.c.o[0m
+[ 62%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/thread/SDL_thread.c.o[0m
+[ 62%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/timer/SDL_timer.c.o[0m
+[ 63%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_RLEaccel.c.o[0m
+[ 63%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit.c.o[0m
+[ 63%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o[0m
+[ 63%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_0.c.o[0m
+[ 63%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_A.c.o[0m
+[ 64%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_N.c.o[0m
+[ 64%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_auto.c.o[0m
+[ 64%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_copy.c.o[0m
+[ 64%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_slow.c.o[0m
+[ 64%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_bmp.c.o[0m
+[ 65%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_clipboard.c.o[0m
+[ 65%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_egl.c.o[0m
+[ 65%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_fillrect.c.o[0m
+[ 65%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_pixels.c.o[0m
+[ 65%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_rect.c.o[0m
+[ 66%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_shape.c.o[0m
+[ 66%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_stretch.c.o[0m
+[ 66%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_surface.c.o[0m
+[ 66%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_video.c.o[0m
+[ 67%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_vulkan_utils.c.o[0m
+[ 67%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/SDL_yuv.c.o[0m
+[ 67%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/yuv2rgb/yuv_rgb.c.o[0m
+[ 67%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_gamecontroller.c.o[0m
+[ 67%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/SDL_joystick.c.o[0m
+[ 68%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/dummy/SDL_dummyaudio.c.o[0m
+[ 68%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/disk/SDL_diskaudio.c.o[0m
+AR    build/host/lib/libmruby_core.a 
+ar: creating /build/source/vendor/mruby/build/host/lib/libmruby_core.a
+[ 68%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/loadso/dlopen/SDL_sysloadso.c.o[0m
+LD    build/host/bin/mrbc 
+[ 68%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/virtual/SDL_virtualjoystick.c.o[0m
+/nix/store/f4qnwzv6y0nq8lix33jr5ykkyybs6fxf-binutils-2.40/bin/ld: /build/source/vendor/mruby/build/host/lib/libmruby_core.a(y.tab.o): undefined reference to symbol 'fgetc@@GLIBC_2.2.5'
+/nix/store/f4qnwzv6y0nq8lix33jr5ykkyybs6fxf-binutils-2.40/bin/ld: /nix/store/1n2l5law9g3b77hcfyp50vrhhssbrj5g-glibc-2.37-8/lib/libc.so.6: error adding symbols: DSO missing from command line
+rake aborted!
+Command failed with status (1): [ld  -o "/build/source/vendor/mruby/build/h...]
+/build/source/vendor/mruby/lib/mruby/build/command.rb:37:in `_run'
+/build/source/vendor/mruby/lib/mruby/build/command.rb:217:in `run'
+/build/source/vendor/mruby/mrbgems/mruby-bin-mrbc/mrbgem.rake:11:in `block (2 levels) in <top (required)>'
+Tasks: TOP => all => gensym => /build/source/vendor/mruby/build/target/presym => /build/source/vendor/mruby/build/target/mrblib/mrblib.pi => /build/source/vendor/mruby/build/target/mrblib/mrblib.c => /build/source/vendor/mruby/build/host/bin/mrbc
+(See full trace by running task with --trace)
+make[2]: *** [CMakeFiles/mruby_vendor.dir/build.make:86: mruby_vendor-prefix/src/mruby_vendor-stamp/mruby_vendor-build] Error 1
+make[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/mruby_vendor.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 68%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullevents.c.o[0m
+[ 69%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullframebuffer.c.o[0m
+[ 69%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullvideo.c.o[0m
+[ 69%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/audio/dsp/SDL_dspaudio.c.o[0m
+[ 69%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11clipboard.c.o[0m
+[ 70%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11dyn.c.o[0m
+[ 70%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11events.c.o[0m
+[ 70%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11framebuffer.c.o[0m
+[ 70%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11keyboard.c.o[0m
+[ 70%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11messagebox.c.o[0m
+[ 71%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11modes.c.o[0m
+[ 71%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11mouse.c.o[0m
+[ 71%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengl.c.o[0m
+[ 71%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengles.c.o[0m
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:[m[K In function '[01m[KX11_GetDisplayModes[m[K':
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:868:14:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kdisplay[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  868 |     Display *[01;35m[Kdisplay[m[K = ((SDL_VideoData *) _this->driverdata)->display;
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:[m[K In function '[01m[KX11_SetDisplayMode[m[K':
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:1024:19:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kmm_height[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1024 |     int mm_width, [01;35m[Kmm_height[m[K;
+      |                   [01;35m[K^~~~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:1024:9:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kmm_width[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1024 |     int [01;35m[Kmm_width[m[K, mm_height;
+      |         [01;35m[K^~~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:1023:26:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kmodedata[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1023 |     SDL_DisplayModeData *[01;35m[Kmodedata[m[K = (SDL_DisplayModeData *)mode->driverdata;
+      |                          [01;35m[K^~~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:1022:22:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kdata[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1022 |     SDL_DisplayData *[01;35m[Kdata[m[K = (SDL_DisplayData *) sdl_display->driverdata;
+      |                      [01;35m[K^~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:1021:14:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kdisplay[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1021 |     Display *[01;35m[Kdisplay[m[K = viddata->display;
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:[m[K At top level:
+[01m[K/build/source/vendor/sdl2/src/video/x11/SDL_x11modes.c:1012:1:[m[K [01;35m[Kwarning: [m[K'[01m[KSDL_XRRSetScreenSizeErrHandler[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+ 1012 | [01;35m[KSDL_XRRSetScreenSizeErrHandler[m[K(Display *d, XErrorEvent *e)
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 71%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11shape.c.o[0m
+[ 72%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11touch.c.o[0m
+[ 72%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11video.c.o[0m
+[ 72%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11vulkan.c.o[0m
+[ 72%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11window.c.o[0m
+[ 72%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xfixes.c.o[0m
+[ 73%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xinput2.c.o[0m
+[ 73%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/video/x11/edid-parse.c.o[0m
+[ 73%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/core/unix/SDL_poll.c.o[0m
+[ 73%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/haptic/linux/SDL_syshaptic.c.o[0m
+[ 74%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev.c.o[0m
+[ 74%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_kbd.c.o[0m
+[ 74%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_capabilities.c.o[0m
+[ 74%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/core/linux/SDL_threadprio.c.o[0m
+[ 74%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o[0m
+[ 75%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o[0m
+[ 75%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o[0m
+[ 75%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o[0m
+[ 75%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o[0m
+[ 75%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o[0m
+[ 76%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o[0m
+[ 76%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o[0m
+[ 76%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o[0m
+[ 76%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o[0m
+[ 76%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o[0m
+[ 77%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o[0m
+[ 77%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/linux/SDL_sysjoystick.c.o[0m
+[ 77%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/joystick/steam/SDL_steamcontroller.c.o[0m
+[ 77%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systhread.c.o[0m
+[ 78%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_sysmutex.c.o[0m
+[ 78%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syscond.c.o[0m
+[ 78%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systls.c.o[0m
+[ 78%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syssem.c.o[0m
+[ 78%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/misc/unix/SDL_sysurl.c.o[0m
+[ 79%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/power/linux/SDL_syspower.c.o[0m
+[ 79%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/locale/unix/SDL_syslocale.c.o[0m
+[ 79%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/filesystem/unix/SDL_sysfilesystem.c.o[0m
+[ 79%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/timer/unix/SDL_systimer.c.o[0m
+[ 79%] [32mBuilding C object vendor/sdl2/CMakeFiles/SDL2-static.dir/src/sensor/dummy/SDL_dummysensor.c.o[0m
+[ 80%] [32m[1mLinking C static library ../../lib/libSDL2.a[0m
+[ 80%] Built target SDL2-static
+make: *** [Makefile:156: all] Error 2
